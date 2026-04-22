@@ -1,3 +1,33 @@
+
+/**
+ * OWLINE DIGITAL SOLUTIONS
+ * Developed by: Anas
+ */
+
+const printSignature = () => {
+
+    const PURPLE = '\x1b[95m';
+    const CYAN = '\x1b[96m';
+    const BOLD = '\x1b[1m';
+    const RESET = '\x1b[0m';
+
+    const logo = `
+${PURPLE}${BOLD}       ,_,   
+      (o,o)    ____  _      _ _             
+       /)  )  / __ \\| |    (_) |            
+      " "    | |  | | |     _| |▄▄▄  ▄▄▄ 
+             | |  | | |    | |  _  \\/ _ \\
+    [SYSTEM] | |__| | |____| | | | |  __/
+    [READY]   \\____/|______|_|_| |_|\\___| ${RESET}
+    `;
+
+    console.log(logo);
+    console.log(`${CYAN}---${RESET} ${BOLD}OWLINE DIGITAL SOLUTIONS${RESET} ${CYAN}---${RESET}`);
+    console.log(`${PURPLE}>>${RESET} Engine: ${BOLD}Node.js${RESET} | Developer: ${BOLD}Anas${RESET} | Status: ${CYAN}Active${RESET}\n`);
+};
+
+
+printSignature();
 const { 
     Client, 
     GatewayIntentBits, 
@@ -51,7 +81,7 @@ const client = new Client({
 });
 
 const CONFIG = {
-    TOKEN: 'YOUR_BOT_TOKEN_HERE', // It's better to use process.env.TOKEN
+    TOKEN: 'YOUR_BOT_TOKEN_HEREd', // It's better to use process.env.TOKEN
     ADMIN_GUILD_ID: '925338827822866513',
     CATEGORY_ID: '1496247365579968663',
     BOT_PREFIX: '!'
