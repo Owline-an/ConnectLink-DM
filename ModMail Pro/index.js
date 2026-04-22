@@ -2,6 +2,35 @@
  * ModMail Pro - A simple and efficient Discord ModMail Bot
  * Built with discord.js v14
  */
+/**
+ * OWLINE DIGITAL SOLUTIONS
+ * Developed by: Anas
+ */
+
+const printSignature = () => {
+
+    const PURPLE = '\x1b[95m';
+    const CYAN = '\x1b[96m';
+    const BOLD = '\x1b[1m';
+    const RESET = '\x1b[0m';
+
+    const logo = `
+${PURPLE}${BOLD}       ,_,   
+      (o,o)    ____  _      _ _             
+       /)  )  / __ \\| |    (_) |            
+      " "    | |  | | |     _| |▄▄▄  ▄▄▄ 
+             | |  | | |    | |  _  \\/ _ \\
+    [SYSTEM] | |__| | |____| | | | |  __/
+    [READY]   \\____/|______|_|_| |_|\\___| ${RESET}
+    `;
+
+    console.log(logo);
+    console.log(`${CYAN}---${RESET} ${BOLD}OWLINE DIGITAL SOLUTIONS${RESET} ${CYAN}---${RESET}`);
+    console.log(`${PURPLE}>>${RESET} Engine: ${BOLD}Node.js${RESET} | Developer: ${BOLD}Anas${RESET} | Status: ${CYAN}Active${RESET}\n`);
+};
+
+
+printSignature();
 
 const { 
     Client, 
