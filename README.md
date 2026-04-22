@@ -1,113 +1,216 @@
-ModMail Pro Series 📩
+# 📩 ModMail Pro Series
 
-Welcome to the ModMail Pro Series – a collection of professional-grade Discord ModMail bots built with discord.js v14. This repository offers two distinct versions tailored to different community needs.
+<p align="center">
 
-🚀 Choose Your Version
+<img src="https://img.shields.io/badge/Discord.js-v14-blue?style=for-the-badge&logo=discord" />
+<img src="https://img.shields.io/badge/Database-SQLite-green?style=for-the-badge&logo=sqlite" />
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 
-1. ModMail Lite (Memory Based)
+</p>
 
-Best for: Small servers or simple support needs.
+<p align="center">
 
-Lightweight: No external database required.
+<a href="PUT_YOUR_DISCORD_INVITE_HERE">
+<img src="https://img.shields.io/badge/Join%20Support%20Server-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+</a>
 
-Easy Setup: Just plug in your token and IDs.
+<a href="https://github.com/your-username/modmail-pro-series">
+<img src="https://img.shields.io/badge/View%20Project-GitHub-black?style=for-the-badge&logo=github"/>
+</a>
 
-Session Recovery: Scans active DMs to recover lost staff channels.
+</p>
 
-Human-Readable: Clean and commented code for beginners.
+---
 
-2. ModMail Pro (Database Driven)
+# 🚀 Welcome to ModMail Pro Series
 
-Best for: Large communities and professional support teams.
+**ModMail Pro Series** is a collection of **professional-grade Discord ModMail bots** built using **discord.js v14**.
 
-SQLite Persistence: Uses better-sqlite3 to store ticket data permanently.
+This repository provides **two powerful versions** designed for different server sizes and support needs.
 
-Offline Recovery: Automatically delivers messages sent by users while the bot was offline.
+---
 
-Real-time Sync: Synchronizes message Edits and Deletions between DMs and Staff Channels.
+# 📦 Choose Your Version
 
-Stability: Maintains ticket links even after a full bot restart.
+## 🟢 ModMail Lite (Memory Based)
 
-✨ Features Across Both Versions
+**Best for:** Small servers or simple support systems.
 
-Bi-directional Communication: Seamless chat between users (via DMs) and staff (via Server Channels).
+### Features:
 
-Manual Contact: Staff can initiate a ticket using !contact <UserID>.
+* ⚡ Lightweight (No Database Required)
+* 🔧 Easy Setup
+* 🔄 Session Recovery (Auto DM Scan)
+* 📖 Clean & Beginner Friendly Code
+* 🧠 Memory-Based Ticket System
 
-Permission Friendly: Automatically restricts ticket channels to admins using Category Overwrites.
+---
 
-Attachment Support: Handles images and files shared in the conversation.
+## 🔵 ModMail Pro (Database Driven)
 
-Clean Command System: Includes !help, !close, and !contact.
+**Best for:** Large communities and professional teams.
 
-🛠 Installation & Setup
+### Features:
 
-Clone the repository:
+* 💾 SQLite Database Support
+* 📩 Offline Message Recovery
+* 🔁 Real-time Message Sync
+* 🔒 Stable Ticket Management
+* 🔄 Full Restart Persistence
 
-git clone [https://github.com/your-username/modmail-pro-series.git](https://github.com/your-username/modmail-pro-series.git)
+---
 
+# ✨ Core Features
 
-Install dependencies:
-For Lite Version:
+Available in **both versions**:
 
-npm install discord.js
+* 🔁 **Bi-directional Communication**
+  Chat seamlessly between **Users (DMs)** and **Staff Channels**
 
-
-For Pro Version:
-
-npm install discord.js better-sqlite3
-
-
-Configuration:
-Open the version you wish to use (lite.js or pro.js) and fill in the CONFIG object:
-
-const CONFIG = {
-    TOKEN: 'YOUR_BOT_TOKEN',
-    ADMIN_GUILD_ID: 'YOUR_SERVER_ID',
-    CATEGORY_ID: 'YOUR_CATEGORY_ID',
-    BOT_PREFIX: '!'
-};
-
-
-Launch the bot:
-
-node index.js
-
-
-🛠 Commands Reference
-
-Command
-
-Usage
-
-Description
-
-!help
-
-!help
-
-Displays the available commands.
+* 👤 **Manual Contact System**
+  Staff can start tickets using:
 
 !contact
 
-!contact <UserID>
+* 🔐 **Permission Management**
+  Ticket channels are automatically restricted to staff.
 
-Opens a new support channel for a specific user.
+* 📎 **Attachment Support**
+  Supports images and files.
 
+* 🧹 **Clean Command System**
+
+Includes:
+
+!help
 !close
+!contact
 
-!close
+---
 
-Closes the active ticket and clears data/channels.
+# 🛠 Installation Guide
 
-!scan
+## Step 1 — Clone Repository
 
-!scan
+```bash
+git clone https://github.com/your-username/modmail-pro-series.git
+```
 
-(Lite only) Scans memory for lost active DMs.
+---
 
-🛡 License
+## Step 2 — Install Dependencies
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute it.
+### Lite Version:
 
-Created with ❤️ to enhance Discord Community Support."# ConnectLink-DM" 
+```bash
+npm install discord.js
+```
+
+### Pro Version:
+
+```bash
+npm install discord.js better-sqlite3
+```
+
+---
+
+## Step 3 — Configuration
+
+Open:
+
+lite.js
+or
+pro.js
+
+Fill the CONFIG object:
+
+```js
+const CONFIG = {
+  TOKEN: 'YOUR_BOT_TOKEN',
+  ADMIN_GUILD_ID: 'YOUR_SERVER_ID',
+  CATEGORY_ID: 'YOUR_CATEGORY_ID',
+  BOT_PREFIX: '!'
+};
+```
+
+---
+
+## Step 4 — Start the Bot
+
+```bash
+node index.js
+```
+
+---
+
+# 📜 Commands Reference
+
+| Command  | Usage    | Description              |
+| -------- | -------- | ------------------------ |
+| !help    | !help    | Shows available commands |
+| !contact | !contact | Opens new support ticket |
+| !close   | !close   | Closes active ticket     |
+| !scan    | !scan    | Lite Version Only        |
+
+---
+
+# 🔗 Important Links
+
+## 🌐 Support Server
+
+Click below to join the official Discord support server:
+
+👉 **PUT YOUR DISCORD LINK HERE**
+
+Example:
+
+👉 https://discord.gg/YOUR_INVITE
+
+---
+
+# 📌 ConnectLink-DM Integration
+
+This project supports **ConnectLink-DM** system.
+
+You can place your connection link here:
+
+```text
+# ConnectLink-DM
+https://your-link-here.com
+```
+
+---
+
+# 🛡 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+✔ Use
+✔ Modify
+✔ Distribute
+
+---
+
+# 💙 Credits
+
+Created to enhance **Discord Community Support Systems**.
+
+Built with ❤️ using:
+
+* discord.js v14
+* SQLite
+* Node.js
+
+---
+
+# ⭐ Support The Project
+
+If you like this project:
+
+⭐ Star the repository
+🔗 Share with others
+💬 Join the Discord server
+
+---
