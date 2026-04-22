@@ -1,20 +1,20 @@
-# 📩 ModMail Pro Series
+# 🔗 ConnectLink-DM
 
 <p align="center">
 
 <img src="https://img.shields.io/badge/Discord.js-v14-blue?style=for-the-badge&logo=discord" />
-<img src="https://img.shields.io/badge/Database-SQLite-green?style=for-the-badge&logo=sqlite" />
+<img src="https://img.shields.io/badge/System-ModMail-purple?style=for-the-badge&logo=discord" />
 <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 
 </p>
 
 <p align="center">
 
-<a href="PUT_YOUR_DISCORD_INVITE_HERE">
+<a href="https://discord.gg/XXx8fttDNF">
 <img src="https://img.shields.io/badge/Join%20Support%20Server-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
 </a>
 
-<a href="https://github.com/your-username/modmail-pro-series">
+<a href="https://github.com/Owline-an/ConnectLink-DM">
 <img src="https://img.shields.io/badge/View%20Project-GitHub-black?style=for-the-badge&logo=github"/>
 </a>
 
@@ -22,83 +22,99 @@
 
 ---
 
-# 🚀 Welcome to ModMail Pro Series
+# 🚀 About ConnectLink-DM
 
-**ModMail Pro Series** is a collection of **professional-grade Discord ModMail bots** built using **discord.js v14**.
+**ConnectLink-DM** is a professional **Discord ModMail communication system** designed to simplify support communication between **users and staff**.
 
-This repository provides **two powerful versions** designed for different server sizes and support needs.
+Built using **discord.js v14**, this system allows seamless messaging between user DMs and staff channels with a clean and scalable architecture.
 
 ---
 
-# 📦 Choose Your Version
+# 📦 Available Versions
 
-## 🟢 ModMail Lite (Memory Based)
+## 🟢 Lite Version (Memory Based)
 
-**Best for:** Small servers or simple support systems.
+**Best for:**
+Small servers or lightweight support systems.
 
 ### Features:
 
-* ⚡ Lightweight (No Database Required)
-* 🔧 Easy Setup
-* 🔄 Session Recovery (Auto DM Scan)
-* 📖 Clean & Beginner Friendly Code
-* 🧠 Memory-Based Ticket System
+* ⚡ Lightweight System
+* 🧠 Memory-Based Tickets
+* 🔄 Auto DM Session Recovery
+* 📖 Beginner-Friendly Code
+* ⚙️ Quick Setup
 
 ---
 
-## 🔵 ModMail Pro (Database Driven)
+## 🔵 Pro Version (Database Driven)
 
-**Best for:** Large communities and professional teams.
+**Best for:**
+Large communities and professional support teams.
 
 ### Features:
 
 * 💾 SQLite Database Support
 * 📩 Offline Message Recovery
-* 🔁 Real-time Message Sync
-* 🔒 Stable Ticket Management
-* 🔄 Full Restart Persistence
+* 🔁 Message Sync (Edits & Deletes)
+* 🔒 Persistent Ticket Storage
+* 🔄 Safe Restart Recovery
 
 ---
 
 # ✨ Core Features
 
-Available in **both versions**:
+These features are available in **all versions**:
 
 * 🔁 **Bi-directional Communication**
-  Chat seamlessly between **Users (DMs)** and **Staff Channels**
+  Users send messages via **DM**, staff reply from **server channels**.
 
 * 👤 **Manual Contact System**
-  Staff can start tickets using:
 
+Start ticket manually:
+
+```
 !contact
+```
 
 * 🔐 **Permission Management**
-  Ticket channels are automatically restricted to staff.
+
+Ticket channels are automatically restricted to admins.
 
 * 📎 **Attachment Support**
-  Supports images and files.
+
+Supports:
+
+* Images
+
+* Files
+
+* Media Attachments
 
 * 🧹 **Clean Command System**
 
-Includes:
+Available commands:
 
+```
 !help
-!close
 !contact
+!close
+!scan
+```
 
 ---
 
 # 🛠 Installation Guide
 
-## Step 1 — Clone Repository
+## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/modmail-pro-series.git
+git clone https://github.com/Owline-an/ConnectLink-DM.git
 ```
 
 ---
 
-## Step 2 — Install Dependencies
+## 2️⃣ Install Dependencies
 
 ### Lite Version:
 
@@ -114,15 +130,21 @@ npm install discord.js better-sqlite3
 
 ---
 
-## Step 3 — Configuration
+## 3️⃣ Configure Bot
 
 Open:
 
+```
 lite.js
-or
-pro.js
+```
 
-Fill the CONFIG object:
+or
+
+```
+pro.js
+```
+
+Edit the CONFIG section:
 
 ```js
 const CONFIG = {
@@ -135,7 +157,7 @@ const CONFIG = {
 
 ---
 
-## Step 4 — Start the Bot
+## 4️⃣ Run The Bot
 
 ```bash
 node index.js
@@ -145,38 +167,38 @@ node index.js
 
 # 📜 Commands Reference
 
-| Command  | Usage    | Description              |
-| -------- | -------- | ------------------------ |
-| !help    | !help    | Shows available commands |
-| !contact | !contact | Opens new support ticket |
-| !close   | !close   | Closes active ticket     |
-| !scan    | !scan    | Lite Version Only        |
+| Command  | Description                    |
+| -------- | ------------------------------ |
+| !help    | Show command list              |
+| !contact | Open support ticket            |
+| !close   | Close active ticket            |
+| !scan    | Scan lost sessions (Lite Only) |
 
 ---
 
-# 🔗 Important Links
+# 🔗 Official Links
 
-## 🌐 Support Server
+## 🌐 GitHub Repository
 
-Click below to join the official Discord support server:
+https://github.com/Owline-an/ConnectLink-DM
 
-👉 **PUT YOUR DISCORD LINK HERE**
+---
 
-Example:
+## 💬 Support Discord Server
 
-👉 https://discord.gg/YOUR_INVITE
+Click to join:
+
+👉 https://discord.gg/XXx8fttDNF
 
 ---
 
 # 📌 ConnectLink-DM Integration
 
-This project supports **ConnectLink-DM** system.
+You can place external connection links here:
 
-You can place your connection link here:
-
-```text
+```
 # ConnectLink-DM
-https://your-link-here.com
+https://your-connect-link-here.com
 ```
 
 ---
@@ -190,18 +212,20 @@ You are free to:
 ✔ Use
 ✔ Modify
 ✔ Distribute
+✔ Improve
 
 ---
 
 # 💙 Credits
 
-Created to enhance **Discord Community Support Systems**.
+Developed to enhance **Discord Support Systems**
+and simplify communication between **Users** and **Staff**.
 
-Built with ❤️ using:
+Built using:
 
 * discord.js v14
-* SQLite
 * Node.js
+* SQLite
 
 ---
 
@@ -210,7 +234,9 @@ Built with ❤️ using:
 If you like this project:
 
 ⭐ Star the repository
-🔗 Share with others
+🔗 Share it with others
 💬 Join the Discord server
+
+Your support helps improve future updates 🚀
 
 ---
